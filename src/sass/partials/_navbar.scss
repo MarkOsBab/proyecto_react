@@ -1,0 +1,26 @@
+.navbar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $navbarColor;
+    font-family: $primaryFont;
+    font-weight: bold;
+    padding: 2rem;
+    font-size: 1.6em;
+    &__logo{
+        color: $primaryNavbarFont;
+    }
+    &__box{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2.5rem;
+        &__list{
+            &__item{
+                color: $primaryNavbarFont;
+            }
+        }
+    }
+}
