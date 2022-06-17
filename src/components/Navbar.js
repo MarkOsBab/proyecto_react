@@ -1,12 +1,14 @@
+import logo from './../images/alt_logo.png';
 function Navbar()
 {
     return (
         <nav className='navbar'>
-            <a href="#" className='navbar__logo'>Logo</a>
+            <a href="#" className='navbar__box__list__item'>
+                <picture className='navbar__logo'>
+                    <img src={logo} alt="logo-image" className='navbar__logo__image' />
+                </picture>
+            </a>
             <ul className='navbar__box'>
-                <li className='navbar__box__list'>
-                    <a href="#" className='navbar__box__list__item'>Inicio</a>
-                </li>
                 <li className='navbar__box__list'>
                     <a href="#" className='navbar__box__list__item'>Nosotros</a>
                 </li>

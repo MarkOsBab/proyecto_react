@@ -10,16 +10,24 @@
     padding: 2rem;
     font-size: 1.6em;
     &__logo{
-        color: $primaryNavbarFont;
+        width: 100%;
+        &__image{
+            width: 6rem;
+        }
     }
     &__box{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 2.5rem;
+        gap: 0rem 2.5rem;
         &__list{
             &__item{
                 color: $primaryNavbarFont;
+                padding: 1rem;
+                &:hover{
+                    background-color: darken($color: $navbarColor, $amount: 4);
+                    box-shadow: 13px 5px 10px -5px rgba(0,0,0,0.1);
+                }
             }
         }
     }

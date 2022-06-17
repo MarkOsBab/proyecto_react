@@ -26,11 +26,17 @@ a {
   padding: 2rem;
   font-size: 1.6em; }
   .navbar__logo {
-    color: #fff; }
+    width: 100%; }
+    .navbar__logo__image {
+      width: 6rem; }
   .navbar__box {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 2.5rem; }
+    gap: 0rem 2.5rem; }
     .navbar__box__list__item {
-      color: #fff; }
+      color: #fff;
+      padding: 1rem; }
+      .navbar__box__list__item:hover {
+        background-color: #629c96;
+        box-shadow: 13px 5px 10px -5px rgba(0, 0, 0, 0.1); }
