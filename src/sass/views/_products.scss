@@ -1,0 +1,81 @@
+.list{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    font-family: $productFont;
+    &--title{
+        margin: 1rem;
+        font-family: $titleFont;
+        font-size: 4em;
+        text-align: left;
+    }
+    &__item{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 1rem;
+        background-color: $cardColor;
+        border-radius: .3rem;
+        max-height: 50rem;
+        max-width: 26rem;
+        width: 26rem;
+        height: 50rem;
+        transition: all .8s;
+        &:hover{
+            box-shadow: 13px 5px 10px -5px rgba(0, 0, 0, 0.1);
+        }
+        &__list{
+            text-align: left;
+            margin: 1rem;
+            &--item{
+                list-style:disc;
+                margin: .2rem 0;
+                font-size: 1.4em;
+                color: $primaryNavbarFont;
+            }
+        }
+        &--title{
+            font-size: 2em;
+            color: white;
+        }
+        &--note{
+            color: $primaryNavbarFont;
+            font-size: 1em;
+        }
+        &--price{
+            color: $primaryNavbarFont;
+            font-size: 2.4em;
+            margin: 1rem;
+            span{
+                border-bottom: .2rem solid $primaryNavbarFont;   
+            }
+        }
+        &__picture{
+            width: 100%;
+            margin: 1rem;
+            &--image{
+                width: 23rem;
+                height: 20rem;
+            }
+        }
+        
+        &--button{
+            padding: 1rem;
+            background-color: darken($color: $navbarColor, $amount: 10);
+            border: 0;
+            color: $primaryNavbarFont;
+            font-family: $primaryFont;
+            font-weight: bold;
+            border-radius: 1rem;
+            cursor: pointer;
+            &:hover{
+                background-color: darken($color: $navbarColor, $amount: 13);
+            }
+        }
+    }
+}

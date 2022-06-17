@@ -24,9 +24,51 @@
             &__item{
                 color: $primaryNavbarFont;
                 padding: 1rem;
+                position: relative;
+                overflow: hidden;
+                display: inline-block;
+                text-decoration: none;
+                transition: all .5s;
                 &:hover{
                     background-color: darken($color: $navbarColor, $amount: 4);
                     box-shadow: 13px 5px 10px -5px rgba(0,0,0,0.1);
+                }
+                &:after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: -100%;
+                    width: 100%;
+                    height: 2px;
+                    background: rgb(238, 238, 238);
+                    transition: left .8s;
+                }
+                &:hover:after {
+                    left: 0;
+                }
+                &__cart{
+                    padding: 1rem;
+                    background-color: darken($color: $navbarColor, $amount: 2);
+                    transition: all .5s;
+                    &:hover{
+                        background-color: darken($color: $navbarColor, $amount: 4);
+                        box-shadow: 13px 5px 10px -5px rgba(0,0,0,0.1);
+                    }
+                    &__box{
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        &__count{
+                            font-size: 1.4em;
+                            color: white;
+                        }
+                        &__image{
+                            width: 3.5rem;
+                            filter:brightness(0) invert(1);
+                        }
+                    }
                 }
             }
         }

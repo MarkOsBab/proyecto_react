@@ -1,11 +1,12 @@
 import logo from './../images/alt_logo.png';
+import CartWidget from './CartWidget';
 function Navbar()
 {
     return (
         <nav className='navbar'>
             <a href="#" className='navbar__box__list__item'>
                 <picture className='navbar__logo'>
-                    <img src={logo} alt="logo-image" className='navbar__logo__image' />
+                    <img src={logo} alt={'logo-image'} className='navbar__logo__image' />
                 </picture>
             </a>
             <ul className='navbar__box'>
@@ -19,7 +20,9 @@ function Navbar()
                     <a href="#" className='navbar__box__list__item'>Destacados</a>
                 </li>
             </ul>
-            <a href="#" className='navbar__box__list__item'>Carrito</a>
+            <a href="#" className='navbar__box__list__item__cart'>
+                <CartWidget />
+            </a>
         </nav>
     );
 }
