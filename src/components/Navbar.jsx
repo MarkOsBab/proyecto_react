@@ -4,23 +4,23 @@ function Navbar()
 {
     return (
         <nav className='navbar'>
-            <a href="#" className='navbar__box__list__item'>
+            <a href={'#'} className='navbar__box__list__item'>
                 <picture className='navbar__logo'>
                     <img src={logo} alt={'logo-image'} className='navbar__logo__image' />
                 </picture>
             </a>
             <ul className='navbar__box'>
                 <li className='navbar__box__list'>
-                    <a href="#" className='navbar__box__list__item'>Nosotros</a>
+                    <a href={'#'} className='navbar__box__list__item'>Nosotros</a>
                 </li>
                 <li className='navbar__box__list'>
-                    <a href="#" className='navbar__box__list__item'>Productos</a>
+                    <a href={'#'} className='navbar__box__list__item'>Productos</a>
                 </li>
                 <li className='navbar__box__list'>
-                    <a href="#" className='navbar__box__list__item'>Destacados</a>
+                    <a href={'#'} className='navbar__box__list__item'>Destacados</a>
                 </li>
             </ul>
-            <a href="#" className='navbar__box__list__item__cart'>
+            <a href={'#'} className='navbar__box__list__item__cart'>
                 <CartWidget />
             </a>
         </nav>

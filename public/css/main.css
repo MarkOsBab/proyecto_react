@@ -88,6 +88,7 @@ a {
   gap: 2rem;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   margin: 1rem;
   font-family: "Josefin Sans", sans-serif; }
   .list--title {
@@ -131,6 +132,16 @@ a {
       margin: 1rem; }
       .list__item--price span {
         border-bottom: 0.2rem solid #fff; }
+    .list__item__buttons {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 1rem; }
+      .list__item__buttons--count {
+        background-color: white;
+        padding: 1rem;
+        font-size: 1.4em;
+        border-radius: 1rem; }
     .list__item__picture {
       width: 100%;
       margin: 1rem; }
