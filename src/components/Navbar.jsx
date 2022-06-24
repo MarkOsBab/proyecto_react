@@ -1,4 +1,5 @@
-import logo from './../images/alt_logo.png';
+import React from 'react'
+import logo from './../images/logo.png';
 import CartWidget from './CartWidget';
 function Navbar()
 {
@@ -7,6 +8,7 @@ function Navbar()
             <a href={'#'} className='navbar__box__list__item'>
                 <picture className='navbar__logo'>
                     <img src={logo} alt={'logo-image'} className='navbar__logo__image' />
+                    <p className='navbar__logo--title'>Repostería beula</p>
                 </picture>
             </a>
             <ul className='navbar__box'>

@@ -25,16 +25,22 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-  background-color: #6EA49F;
+  justify-content: space-evenly;
+  background-color: #976ea4;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   padding: 2rem;
   font-size: 1.6em; }
   .navbar__logo {
-    width: 100%; }
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem; }
     .navbar__logo__image {
       width: 6rem; }
+    .navbar__logo--title {
+      font-family: "Montserrat", sans-serif; }
   .navbar__box {
     display: flex;
     flex-direction: row;
@@ -49,7 +55,7 @@ a {
       text-decoration: none;
       transition: all .5s; }
       .navbar__box__list__item:hover {
-        background-color: #629c96;
+        background-color: #8e629c;
         box-shadow: 13px 5px 10px -5px rgba(0, 0, 0, 0.1); }
       .navbar__box__list__item:after {
         content: "";
@@ -64,10 +70,10 @@ a {
         left: 0; }
       .navbar__box__list__item__cart {
         padding: 1rem;
-        background-color: #68a09b;
+        background-color: #9368a0;
         transition: all .5s; }
         .navbar__box__list__item__cart:hover {
-          background-color: #629c96;
+          background-color: #8e629c;
           box-shadow: 13px 5px 10px -5px rgba(0, 0, 0, 0.1); }
         .navbar__box__list__item__cart__box {
           width: 100%;
@@ -107,19 +113,14 @@ a {
     border-radius: .3rem;
     max-height: 50rem;
     max-width: 26rem;
-    width: 26rem;
+    width: 20rem;
     height: 50rem;
     transition: all .8s; }
     .list__item:hover {
       box-shadow: 13px 5px 10px -5px rgba(0, 0, 0, 0.1); }
-    .list__item__list {
-      text-align: left;
-      margin: 1rem; }
-      .list__item__list--item {
-        list-style: disc;
-        margin: .2rem 0;
-        font-size: 1.4em;
-        color: #fff; }
+    .list__item--description {
+      font-size: 1.4em;
+      color: white; }
     .list__item--title {
       font-size: 2em;
       color: white; }
@@ -143,14 +144,13 @@ a {
         font-size: 1.4em;
         border-radius: 1rem; }
     .list__item__picture {
-      width: 100%;
-      margin: 1rem; }
+      width: 100%; }
       .list__item__picture--image {
-        width: 23rem;
-        height: 20rem; }
+        width: 18rem;
+        height: 16rem; }
     .list__item--button {
       padding: 1rem;
-      background-color: #568984;
+      background-color: #7d5689;
       border: 0;
       color: #fff;
       font-family: "Montserrat", sans-serif;
@@ -158,4 +158,4 @@ a {
       border-radius: 1rem;
       cursor: pointer; }
       .list__item--button:hover {
-        background-color: #50807b; }
+        background-color: #745080; }

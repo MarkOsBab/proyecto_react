@@ -3,7 +3,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background-color: $navbarColor;
     font-family: $primaryFont;
     font-weight: bold;
@@ -11,8 +11,15 @@
     font-size: 1.6em;
     &__logo{
         width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
         &__image{
             width: 6rem;
+        }
+        &--title{
+            font-family: $primaryFont;
         }
     }
     &__box{

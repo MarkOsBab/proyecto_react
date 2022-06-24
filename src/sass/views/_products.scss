@@ -24,21 +24,15 @@
         border-radius: .3rem;
         max-height: 50rem;
         max-width: 26rem;
-        width: 26rem;
+        width: 20rem;
         height: 50rem;
         transition: all .8s;
         &:hover{
             box-shadow: 13px 5px 10px -5px rgba(0, 0, 0, 0.1);
         }
-        &__list{
-            text-align: left;
-            margin: 1rem;
-            &--item{
-                list-style:disc;
-                margin: .2rem 0;
-                font-size: 1.4em;
-                color: $primaryNavbarFont;
-            }
+        &--description{
+            font-size: 1.4em;
+            color: white;
         }
         &--title{
             font-size: 2em;
@@ -70,10 +64,9 @@
         }
         &__picture{
             width: 100%;
-            margin: 1rem;
             &--image{
-                width: 23rem;
-                height: 20rem;
+                width: 18rem;
+                height: 16rem;
             }
         }
         
