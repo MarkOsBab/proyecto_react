@@ -5,9 +5,11 @@ function ItemListContainer()
 {
     const [product, setProduct] = useState([])
     useEffect(() => {
-        fetch('cakes.json')
+        setTimeout(() =>
+            fetch('cakes.json')
             .then((response) => response.json())
             .then((data) => setProduct(data.cakes))
+        , 2000)
     }, []);
     
     return (
