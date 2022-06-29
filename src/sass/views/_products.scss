@@ -50,6 +50,11 @@
                 border-bottom: .2rem solid $primaryNavbarFont;   
             }
         }
+        &--stock{
+            padding: 1rem;
+            font-size: 1.2em;
+            color: white;
+        }
         &__buttons{
             display: flex;
             flex-direction: row;

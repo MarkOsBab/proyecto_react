@@ -1,14 +1,12 @@
-import ItemCount from "./ItemCount";
-function Item({title, image, desc, price, stock}) {
+function Item(props) {
     return (
         <div className='list__item'>
-            <h3 className='list__item--title'>{title}</h3>
+            <h3 className='list__item--title'>{props.title}</h3>
             <picture className='list__item__picture'>
-                <img className='list__item__picture--image' src={image} alt={'Item-picture'} />
+                <img className='list__item__picture--image' src={props.image} alt={'Item-picture'} />
             </picture>
-            <p className='list__item--description'>{desc}</p>
-            <p className='list__item--price'><span>$</span> {price} </p>
-            <ItemCount stock={stock}/>
+            <p className='list__item--price'><span>$</span> {props.price} </p>
+            <p className='list__item--stock'>Stock: {props.stock}</p>
         </div>
     );
 }
