@@ -26,7 +26,7 @@ a {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
-  background-color: #976ea4;
+  background-color: #bac4ed;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   padding: 2rem;
@@ -47,7 +47,7 @@ a {
     flex-wrap: wrap;
     gap: 0rem 2.5rem; }
     .navbar__box__list__item {
-      color: #fff;
+      color: #2b2b2b;
       padding: 1rem;
       position: relative;
       overflow: hidden;
@@ -55,7 +55,7 @@ a {
       text-decoration: none;
       transition: all .5s; }
       .navbar__box__list__item:hover {
-        background-color: #8e629c;
+        background-color: #cad2f1;
         box-shadow: 13px 5px 10px -5px rgba(0, 0, 0, 0.1); }
       .navbar__box__list__item:after {
         content: "";
@@ -70,10 +70,10 @@ a {
         left: 0; }
       .navbar__box__list__item__cart {
         padding: 1rem;
-        background-color: #9368a0;
+        background-color: #b2bdeb;
         transition: all .5s; }
         .navbar__box__list__item__cart:hover {
-          background-color: #8e629c;
+          background-color: #aab6e9;
           box-shadow: 13px 5px 10px -5px rgba(0, 0, 0, 0.1); }
         .navbar__box__list__item__cart__box {
           width: 100%;
@@ -125,14 +125,14 @@ a {
       font-size: 2em;
       color: white; }
     .list__item--note {
-      color: #fff;
+      color: #2b2b2b;
       font-size: 1em; }
     .list__item--price {
-      color: #fff;
+      color: #2b2b2b;
       font-size: 2.4em;
       margin: 1rem; }
       .list__item--price span {
-        border-bottom: 0.2rem solid #fff; }
+        border-bottom: 0.2rem solid #2b2b2b; }
     .list__item--stock {
       padding: 1rem;
       font-size: 1.2em;
@@ -154,15 +154,15 @@ a {
         height: 16rem; }
     .list__item--button {
       padding: 1rem;
-      background-color: #7d5689;
+      background-color: #92a1e2;
       border: 0;
-      color: #fff;
+      color: #2b2b2b;
       font-family: "Montserrat", sans-serif;
       font-weight: bold;
       border-radius: 1rem;
       cursor: pointer; }
       .list__item--button:hover {
-        background-color: #745080; }
+        background-color: #8597df; }
 
 .item {
   max-width: 1080px;
@@ -213,7 +213,7 @@ a {
           left: -100%;
           width: 100%;
           height: 2px;
-          background-color: #976ea4;
+          background-color: #bac4ed;
           transition: left .8s; }
         .item__box__details--button:hover:after {
           left: 0; }

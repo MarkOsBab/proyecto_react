@@ -1,21 +1,18 @@
-import ItemCount from "./ItemCount";
-
+import ItemDetail from "./ItemDetail";
+import React, { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom';
 function ItemDetailContainer()
-{
+{   
+    const [product, setProduct] = useState()
+    const {id} = useParams();
+    useEffect(() => {
+            fetch(`https://my-json-server.typicode.com/matidsc/SampleJSONPlaceholder/cakes/${id}`)
+            .then((response) => response.json())
+            .then((data) => setProduct(data))
+    }, [id]);
     return (
-        
         <div className='item'>
-            <div className='item__box'>
-                <picture className='item__box__picture'>
-                    <img className='item__box__picture--img' src={'./../images/cakes/bombones.jpg'} alt={'cake-picture'} />
-                </picture>
-                <div className='item__box__details'>
-                    <h2 className='item__box__details--title'>Titulo de la torta</h2>
-                    <p className='item__box__details--description'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi labore autem, placeat quisquam saepe eaque illum temporibus optio a officiis iste magnam dolorem veniam minus eveniet eos culpa distinctio neque.</p>
-                    <ItemCount stock={10}/>
-                    <a href={'#'} className='item__box__details--button'>Añadir al carrito</a>
-                </div>
-            </div>
+            <ItemDetail cakes={product}/>
         </div>
     );
 }

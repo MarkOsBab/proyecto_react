@@ -5,11 +5,9 @@ function ItemListContainer()
 {
     const [product, setProduct] = useState([])
     useEffect(() => {
-        setTimeout(() =>
-            fetch('cakes.json')
+            fetch('https://my-json-server.typicode.com/matidsc/SampleJSONPlaceholder/cakes')
             .then((response) => response.json())
-            .then((data) => setProduct(data.cakes))
-        , 2000)
+            .then((data) => setProduct(data))
     }, []);
     
     return (
