@@ -1,12 +1,14 @@
 .item{
     max-width: 1080px;
     margin: 0 auto;
-    font-family: $primaryFont;
+    font-family: $primaryFont;;
     &__box{
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-items: center;
         align-items: center;
+        height: auto;
+        margin: 5rem;
         &__picture{
             width: 100%;
             &--img{
@@ -26,13 +28,21 @@
                 margin: 1rem;
             }
             &--description{
+                font-size: 1.4em;
                 font-weight: bold;
+            }
+            &--price{
+                font-size: 1.2em;
+                font-weight: bold;
+                span{
+                    border-bottom: .2rem solid black;   
+                }
             }
             &--button{
                 display: flex;
                 color: black;
                 background-color: #ECECEC;
-                padding: 1rem;
+                padding: 1.4rem;
                 position: relative;
                 overflow: hidden;
                 display: inline-block;
@@ -40,6 +50,9 @@
                 transition: all .5s;
                 font-family: $productFont;
                 font-weight: bold;
+                font-size: 1.4em;
+                border: none;
+                cursor: pointer;
                 border-radius: 1rem;
                 &:hover{
                     background-color: darken($color: #ececec, $amount: 4);

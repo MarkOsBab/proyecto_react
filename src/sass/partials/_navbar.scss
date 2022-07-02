@@ -37,7 +37,7 @@
                 text-decoration: none;
                 transition: all .5s;
                 &:hover{
-                    background-color: lighten($color: $navbarColor, $amount: 4);
+                    background-color: darken($color: $navbarColor, $amount: 4);
                     box-shadow: 13px 5px 10px -5px rgba(0,0,0,0.1);
                 }
                 &:after {
@@ -55,7 +55,7 @@
                 }
                 &__cart{
                     padding: 1rem;
-                    background-color: darken($color: $navbarColor, $amount: 2);
+                    background-color: darken($color: $navbarColor, $amount: 0);
                     transition: all .5s;
                     &:hover{
                         background-color: darken($color: $navbarColor, $amount: 4);

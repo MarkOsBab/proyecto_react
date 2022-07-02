@@ -22,13 +22,10 @@
         padding: 1rem;
         background-color: $cardColor;
         border-radius: .3rem;
-        max-height: 50rem;
-        max-width: 26rem;
-        width: 20rem;
-        height: 50rem;
+        height: 100%;
         transition: all .8s;
         &:hover{
-            box-shadow: 13px 5px 10px -5px rgba(0, 0, 0, 0.1);
+            background-color: lighten($color: $cardColor, $amount: 10);
         }
         &--description{
             font-size: 1.4em;
@@ -43,11 +40,11 @@
             font-size: 1em;
         }
         &--price{
-            color: $primaryNavbarFont;
+            color: white;
             font-size: 2.4em;
             margin: 1rem;
             span{
-                border-bottom: .2rem solid $primaryNavbarFont;   
+                border-bottom: .2rem solid white;   
             }
         }
         &--stock{

@@ -167,7 +167,8 @@ a {
 .item {
   max-width: 1080px;
   margin: 0 auto;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+  margin: 10rem; }
   .item__box {
     display: grid;
     grid-template-columns: 1fr 1fr;

@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 function Item(props) {
     return (
         <div className='list__item'>
-            <Link to={`/products/${props.id}`}>
+            <Link to={`/tortas/${props.id}`}>
                 <h3 className='list__item--title'>{props.title}</h3>
                 <picture className='list__item__picture'>
                     <img className='list__item__picture--image' src={props.image} alt={'Item-picture'} />

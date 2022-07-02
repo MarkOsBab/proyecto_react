@@ -6,7 +6,7 @@ function Navbar()
 {
     return (
         <nav className='navbar'>
-            <NavLink to={'/home'} className='navbar__box__list__item'>
+            <NavLink to={'/'} className='navbar__box__list__item'>
                 <picture className='navbar__logo'>
                     <img src={logo} alt={'logo-image'} className='navbar__logo__image' />
                     <p className='navbar__logo--title'>Repostería beula</p>
@@ -14,10 +14,10 @@ function Navbar()
             </NavLink>
             <ul className='navbar__box'>
                 <li className='navbar__box__list'>
-                    <NavLink to={'#'} className='navbar__box__list__item'>Nosotros</NavLink >
+                    <NavLink to={'/cakes'} className='navbar__box__list__item'>Tortas</NavLink >
                 </li>
                 <li className='navbar__box__list'>
-                    <NavLink to={'/products'} className='navbar__box__list__item'>Productos</NavLink>
+                    <NavLink to={'/tematicas'} className='navbar__box__list__item'>Tortas tematicas</NavLink>
                 </li>
                 <li className='navbar__box__list'>
                     <NavLink to={'#'} className='navbar__box__list__item'>Destacados</NavLink>

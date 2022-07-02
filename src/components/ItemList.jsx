@@ -2,7 +2,7 @@ import Item from './Item';
 function ItemList(props) {
     return (
         <div className='container'>
-            <h2 className='list--title'>Lista de productos</h2>
+            <h2 className='list--title'>Tortas comúnes</h2>
             <div className='list'>
                 {props.items.map((item) =>
                     <Item id={item.id} title={item.title} image={item.image} price={item.price} stock={item.stock} />
