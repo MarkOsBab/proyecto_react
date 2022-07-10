@@ -1,0 +1,10 @@
+.notFound{
+    display: grid;
+    grid-template-rows: 1fr auto;
+    justify-items: center;
+    align-items: center;
+    & h1{
+        font-size: 3em;
+        font-family: $productFont;
+    }
+}

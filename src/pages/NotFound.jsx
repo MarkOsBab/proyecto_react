@@ -1,8 +1,10 @@
+import {TbError404} from 'react-icons/tb';
 function NotFound()
 {
     return(
-        <div>
-            <h1>No se encontro prri</h1>
+        <div className='notFound'>
+            <TbError404 size={300}/>
+            <h1>NO SE ENCONTRO</h1>
         </div>
     );
 }

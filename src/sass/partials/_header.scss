@@ -1,0 +1,23 @@
+.header{
+    background-image: url('./images/header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 150%;
+    background-attachment: fixed;
+    height: 40rem;
+    &__box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        &__title{
+            font-size: 4em;
+            font-family: $titleFont;
+            background-color: rgba($color: #5f536b, $alpha: 0.4);
+            padding: 1rem;
+            border-radius: .5rem;
+            color: white;
+        }
+    }
+}

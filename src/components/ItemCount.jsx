@@ -2,8 +2,13 @@ import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlusCircle } from "@fortawesome/free-solid-svg-icons";
 import { faCircleMinus } from "@fortawesome/free-solid-svg-icons";
-function ItemCount({stock}) {
-    const [num, setNum] = useState(1);
+function ItemCount({stock, onAdd, initial}) {
+    const [num, setNum] = useState(initial);
+
+    const addToCart = () => {
+        onAdd(num);
+      };
+
     const sumar = () => {
         if (num < stock) {
             setNum(num+1);
@@ -24,6 +29,7 @@ function ItemCount({stock}) {
             <button className='list__item--button' onClick={sumar}>
                 <FontAwesomeIcon icon={faPlusCircle} />
             </button>
+            <button onClick={addToCart} className='item__box__details--button'>Añadir al carrito</button>
         </div>
     );
 }

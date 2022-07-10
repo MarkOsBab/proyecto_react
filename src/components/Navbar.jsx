@@ -14,13 +14,10 @@ function Navbar()
             </NavLink>
             <ul className='navbar__box'>
                 <li className='navbar__box__list'>
-                    <NavLink to={'/cakes'} className='navbar__box__list__item'>Tortas</NavLink >
+                    <NavLink to={'/'} className='navbar__box__list__item'>Inicio</NavLink >
                 </li>
                 <li className='navbar__box__list'>
-                    <NavLink to={'/tematicas'} className='navbar__box__list__item'>Tortas tematicas</NavLink>
-                </li>
-                <li className='navbar__box__list'>
-                    <NavLink to={'#'} className='navbar__box__list__item'>Destacados</NavLink>
+                    <NavLink to={'/tortas'} className='navbar__box__list__item'>Tortas</NavLink>
                 </li>
             </ul>
             <a href={'#'} className='navbar__box__list__item__cart'>

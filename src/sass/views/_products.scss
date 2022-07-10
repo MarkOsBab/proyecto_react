@@ -5,7 +5,8 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin: 1rem;
+    padding: 2rem;
+    background-color: $primaryColor;
     font-family: $productFont;
     &--title{
         margin: 1rem;
@@ -20,37 +21,38 @@
         align-items: center;
         justify-content: space-evenly;
         padding: 1rem;
-        background-color: $cardColor;
+        background-color: #fff;
         border-radius: .3rem;
         height: 100%;
         transition: all .8s;
+        margin: 1rem;
         &:hover{
-            background-color: lighten($color: $cardColor, $amount: 10);
+            background-color: darken($color: white, $amount: 15);
         }
         &--description{
             font-size: 1.4em;
-            color: white;
+            color: black;
         }
         &--title{
             font-size: 2em;
-            color: white;
+            color: black;
         }
         &--note{
             color: $primaryNavbarFont;
             font-size: 1em;
         }
         &--price{
-            color: white;
+            color: black;
             font-size: 2.4em;
             margin: 1rem;
             span{
-                border-bottom: .2rem solid white;   
+                border-bottom: .2rem solid $cardColor;   
             }
         }
         &--stock{
             padding: 1rem;
             font-size: 1.2em;
-            color: white;
+            color: black;
         }
         &__buttons{
             display: flex;
