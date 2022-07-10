@@ -12,7 +12,6 @@ function ItemCount({stock, onAdd, initial}) {
     const sumar = () => {
         if (num < stock) {
             setNum(num+1);
-            console.log(num);
         }
     }
     const resta = () => {
