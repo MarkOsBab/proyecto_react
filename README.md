@@ -10,3 +10,5 @@
 - React JS
 - SASS
 - HTML 5
+
+#### Author: [MarkOsBab](https://www.linkedin.com/in/markosbab)
