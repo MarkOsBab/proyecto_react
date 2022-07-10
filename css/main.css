@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+.container {
+  max-width: 1080px;
+  margin: 0 auto; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  scroll-behavior: smooth; }
+
+a {
+  text-decoration: none; }
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #bac4ed;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  padding: 2rem;
+  font-size: 1.6em; }
+  .navbar__logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem; }
+    .navbar__logo__image {
+      width: 6rem; }
+    .navbar__logo--title {
+      font-family: "Montserrat", sans-serif; }
+  .navbar__box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0rem 2.5rem; }
+    .navbar__box__list__item {
+      color: #2b2b2b;
+      padding: 1rem;
+      position: relative;
+      overflow: hidden;
+      display: inline-block;
+      text-decoration: none;
+      transition: all .5s; }
+      .navbar__box__list__item:hover {
+        background-color: #cad2f1;
+        box-shadow: 13px 5px 10px -5px rgba(0, 0, 0, 0.1); }
+      .navbar__box__list__item:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: -100%;
+        width: 100%;
+        height: 2px;
+        background: #eeeeee;
+        transition: left .8s; }
+      .navbar__box__list__item:hover:after {
+        left: 0; }
+      .navbar__box__list__item__cart {
+        padding: 1rem;
+        background-color: #b2bdeb;
+        transition: all .5s; }
+        .navbar__box__list__item__cart:hover {
+          background-color: #aab6e9;
+          box-shadow: 13px 5px 10px -5px rgba(0, 0, 0, 0.1); }
+        .navbar__box__list__item__cart__box {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center; }
+          .navbar__box__list__item__cart__box__count {
+            font-size: 1.4em;
+            color: white; }
+          .navbar__box__list__item__cart__box__image {
+            width: 3.5rem;
+            filter: brightness(0) invert(1); }
+
+.list {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 1rem;
+  font-family: "Josefin Sans", sans-serif; }
+  .list--title {
+    margin: 1rem;
+    font-family: "Lobster", cursive;
+    font-size: 4em;
+    text-align: left; }
+  .list__item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem;
+    background-color: #272727;
+    border-radius: .3rem;
+    max-height: 50rem;
+    max-width: 26rem;
+    width: 20rem;
+    height: 50rem;
+    transition: all .8s; }
+    .list__item:hover {
+      box-shadow: 13px 5px 10px -5px rgba(0, 0, 0, 0.1); }
+    .list__item--description {
+      font-size: 1.4em;
+      color: white; }
+    .list__item--title {
+      font-size: 2em;
+      color: white; }
+    .list__item--note {
+      color: #2b2b2b;
+      font-size: 1em; }
+    .list__item--price {
+      color: #2b2b2b;
+      font-size: 2.4em;
+      margin: 1rem; }
+      .list__item--price span {
+        border-bottom: 0.2rem solid #2b2b2b; }
+    .list__item--stock {
+      padding: 1rem;
+      font-size: 1.2em;
+      color: white; }
+    .list__item__buttons {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 1rem; }
+      .list__item__buttons--count {
+        background-color: white;
+        padding: 1rem;
+        font-size: 1.4em;
+        border-radius: 1rem; }
+    .list__item__picture {
+      width: 100%; }
+      .list__item__picture--image {
+        width: 18rem;
+        height: 16rem; }
+    .list__item--button {
+      padding: 1rem;
+      background-color: #92a1e2;
+      border: 0;
+      color: #2b2b2b;
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      border-radius: 1rem;
+      cursor: pointer; }
+      .list__item--button:hover {
+        background-color: #8597df; }
+
+.item {
+  max-width: 1080px;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+  margin: 10rem; }
+  .item__box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center; }
+    .item__box__picture {
+      width: 100%; }
+      .item__box__picture--img {
+        width: 40rem; }
+    .item__box__details {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1.4em; }
+      .item__box__details--title {
+        font-family: "Lobster", cursive;
+        font-size: 3em;
+        margin: 1rem; }
+      .item__box__details--description {
+        font-weight: bold; }
+      .item__box__details--button {
+        display: flex;
+        color: black;
+        background-color: #ECECEC;
+        padding: 1rem;
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+        text-decoration: none;
+        transition: all .5s;
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: bold;
+        border-radius: 1rem; }
+        .item__box__details--button:hover {
+          background-color: #e2e2e2;
+          box-shadow: 13px 5px 10px -5px rgba(0, 0, 0, 0.1); }
+        .item__box__details--button:after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: -100%;
+          width: 100%;
+          height: 2px;
+          background-color: #bac4ed;
+          transition: left .8s; }
+        .item__box__details--button:hover:after {
+          left: 0; }
