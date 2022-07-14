@@ -20,9 +20,9 @@ function Navbar()
                     <NavLink to={'/tortas'} className='navbar__box__list__item'>Tortas</NavLink>
                 </li>
             </ul>
-            <a href={'#'} className='navbar__box__list__item__cart'>
+            <NavLink to={'/cart'} className='navbar__box__list__item__cart'>
                 <CartWidget />
-            </a>
+            </NavLink>
             
         </nav>
     );

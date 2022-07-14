@@ -76,7 +76,7 @@
         
         &--button{
             padding: 1rem;
-            background-color: darken($color: $navbarColor, $amount: 10);
+            background-color: darken($color: $primaryColor, $amount: 10);
             border: 0;
             color: $primaryNavbarFont;
             font-family: $primaryFont;
@@ -84,7 +84,7 @@
             border-radius: 1rem;
             cursor: pointer;
             &:hover{
-                background-color: darken($color: $navbarColor, $amount: 13);
+                background-color: darken($color: $primaryColor, $amount: 13);
             }
         }
     }
