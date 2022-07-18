@@ -14,7 +14,7 @@ function Cart(){
                 <h2 className='cart--title'>Finaliza la compra</h2>
                 <div className='cart__wrapper'>
                     {items.map((item) => {
-                        return <CartItem key={item.id} id={item.id} stock={item.stock} title={item.title} image={item.image} price={item.price} removeItem={removeItem} updateStockItem={updateStockItem}/>
+                        return <CartItem key={item.id} id={item.id} stock={item.stock} cantidad={item.cantidad} title={item.title} image={item.image} price={item.price} removeItem={removeItem} updateStockItem={updateStockItem}/>
                     })}
                 </div>
                 <div className='cart__footer'>

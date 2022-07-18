@@ -3,15 +3,14 @@ export const contexto = createContext([]);
 const { Provider } = contexto;
 function CustomProvider({children}){
     const [items, setItems] = useState([]);
-
     const addToCart = (props, num) => {
         if (isInCart(props.cakes.id)){
             const index = items.indexOf(items.find((cake) => cake.id === props.cakes.id));
             const aux = [...items];
-            aux[index].stock += num;
+            aux[index].cantidad += num;
             setItems(aux)
         } else{
-            props.cakes.stock = num;
+            props.cakes.cantidad = num;
             setItems([...items, props.cakes])
         }
     }
@@ -33,8 +32,8 @@ function CustomProvider({children}){
     const getTotalPrice = () => {
         var totalPrice = 0;
         items.forEach((item) => {
-            var stock = item.stock;
-            for(let index = 0; index < stock; index++){
+            var cantidad = item.cantidad;
+            for(let index = 0; index < cantidad; index++){
                 totalPrice += item.price;
             }
         });
@@ -44,7 +43,7 @@ function CustomProvider({children}){
     const countCartItems = () => {
         var total = 0;
         items.forEach((item) => {
-            total += item.stock;
+            total += item.cantidad;
         })
         return total;
     }
@@ -53,7 +52,7 @@ function CustomProvider({children}){
 
         const index = items.indexOf(items.find((item) => item.id === id));
         const aux = [...items];
-        aux[index].stock = count;
+        aux[index].cantidad = count;
         setItems(aux);
       };
 

@@ -4,7 +4,6 @@ import { faPlusCircle } from "@fortawesome/free-solid-svg-icons";
 import { faCircleMinus } from "@fortawesome/free-solid-svg-icons";
 function ItemCount({stock, onAdd, initial}) {
     const [num, setNum] = useState(initial);
-
     const addToCart = () => {
         onAdd(num);
       };
