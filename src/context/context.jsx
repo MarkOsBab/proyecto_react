@@ -4,14 +4,14 @@ const { Provider } = contexto;
 function CustomProvider({children}){
     const [items, setItems] = useState([]);
     const addToCart = (props, num) => {
-        if (isInCart(props.cakes.id)){
-            const index = items.indexOf(items.find((cake) => cake.id === props.cakes.id));
+        if (isInCart(props.id)){
+            const index = items.indexOf(items.find((cake) => cake.id === props.id));
             const aux = [...items];
             aux[index].cantidad += num;
             setItems(aux)
         } else{
-            props.cakes.cantidad = num;
-            setItems([...items, props.cakes])
+            props.cantidad = num;
+            setItems([...items, props])
         }
     }
 
@@ -32,10 +32,7 @@ function CustomProvider({children}){
     const getTotalPrice = () => {
         var totalPrice = 0;
         items.forEach((item) => {
-            var cantidad = item.cantidad;
-            for(let index = 0; index < cantidad; index++){
-                totalPrice += item.price;
-            }
+            totalPrice = item.cantidad * item.price
         });
         return totalPrice;
     }

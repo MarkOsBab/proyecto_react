@@ -1,8 +1,7 @@
 import ItemList from "./ItemList";
 import React, { useEffect, useState } from 'react'
 import LoadingSpinner from "./LoadingSpinner";
-import { useParams } from "react-router-dom";
-import { getFirestore, doc, getDoc, collection, getDocs } from 'firebase/firestore';
+import { getFirestore, collection, getDocs } from 'firebase/firestore';
 function ItemListContainer()
 {
     const [product, setProduct] = useState([])
@@ -21,7 +20,10 @@ function ItemListContainer()
         const db = getFirestore();
         const cakesRef = collection(db, 'cakes');
         getDocs(cakesRef).then((snapshot) => {
-            setProduct(snapshot.docs.map((doc) => doc.data()))
+            let list = snapshot.docs.map((doc) => {
+                return{docId:doc.id, ...doc.data()}
+            })
+            setProduct(list)
             setIsLoading(false)
         })
     }, [])
