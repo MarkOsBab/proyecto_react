@@ -17,6 +17,7 @@ function Cart(){
                         return <CartItem key={item.id} id={item.id} stock={item.stock} cantidad={item.cantidad} title={item.title} image={item.image} price={item.price} removeItem={removeItem} updateStockItem={updateStockItem}/>
                     })}
                 </div>
+                <Link to={'/checkout'} className='cart--btn-end'>Finalizar la compra</Link>
                 <div className='cart__footer'>
                     <p className='cart__footer--total'>Precio final: <b>${getTotalPrice()}</b></p>
                     <Link to={'/tortas'} className='cart__footer--btn'><FaStore/> Sigue comprando</Link>

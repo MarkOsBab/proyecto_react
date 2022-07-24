@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { CgTrash } from 'react-icons/cg';
 import { BsFillCartPlusFill } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
-function CartItem({ id,stock,title,image, removeItem, updateStockItem,cantidad}){
+function CartItem({ id,title,image, removeItem, updateStockItem,cantidad}){
     const [cartCantidad, setCartCantidad] = useState(cantidad);
   useEffect(() => {
     updateStockItem(id,cartCantidad)

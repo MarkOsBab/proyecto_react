@@ -9,6 +9,7 @@ import Header from './components/Header';
 import React from 'react';
 import CustomProvider from './context/context';
 import Cart from './components/Cart';
+import Checkout from './components/Checkout';
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
           <Route path='/tortas' element={<ItemListContainer />} />
           <Route path={'/tortas/:id'} element={<ItemDetailContainer />} />
           <Route path={'/cart'} element={<Cart />} />
+          <Route path={'/checkout'} element={<Checkout/>}/>
         </Routes>
       </div>
   </CustomProvider>
