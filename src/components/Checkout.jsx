@@ -42,7 +42,7 @@ function Checkout()
                 backToBuy
             :(!showId ? (
             <div className='checkout__wrapper'>
-                <h1 className='checkout--title'>Ya casi terminamos</h1>
+                <h1 className='checkout__wrapper--title'>Ya casi terminamos</h1>
                 <form onSubmit={endPurchase}>
                     <input
                      type={'text'}
@@ -66,13 +66,13 @@ function Checkout()
                       placeholder={'E-mail'}
                       pattern={'[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$'}
                       />
-                      <div className='checkout__footer'>
-                        <button className='checkout--btn-end'>Confirmar la compra</button>
+                      <div className='checkout__wrapper__footer'>
+                        <button className='checkout__wrapper__footer--btn'>Confirmar la compra</button>
                       </div>
                 </form>
             </div>
             ) : (
-                <div>
+                <div className='checkout__done'>
                     <p>Código de compra: {idVenta}</p>
                 </div>
             ))}

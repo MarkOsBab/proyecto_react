@@ -4,7 +4,7 @@ import { contexto } from "../context/context";
 import CartItem from "./CartItem";
 import { FaStore } from 'react-icons/fa';
 import { AiOutlineClear } from 'react-icons/ai';
-import { BsFillCartXFill } from 'react-icons/bs';
+import { BsFillCartXFill, BsFillCartCheckFill } from 'react-icons/bs';
 function Cart(){
     const { items, getTotalPrice, removeItem, updateStockItem, clear} = useContext(contexto);
     return(
@@ -17,9 +17,9 @@ function Cart(){
                         return <CartItem key={item.id} id={item.id} stock={item.stock} cantidad={item.cantidad} title={item.title} image={item.image} price={item.price} removeItem={removeItem} updateStockItem={updateStockItem}/>
                     })}
                 </div>
-                <Link to={'/checkout'} className='cart--btn-end'>Finalizar la compra</Link>
+                <p className='cart--total'>Precio final: <b>${getTotalPrice()}</b></p>
                 <div className='cart__footer'>
-                    <p className='cart__footer--total'>Precio final: <b>${getTotalPrice()}</b></p>
+                <Link to={'/checkout'} className='cart__footer--btn-end'><BsFillCartCheckFill/> Finalizar la compra</Link>
                     <Link to={'/tortas'} className='cart__footer--btn'><FaStore/> Sigue comprando</Link>
                     <button onClick={clear} className={'cart__footer--btn-clear'}><AiOutlineClear/> Vaciar el carrito</button>
                 </div>

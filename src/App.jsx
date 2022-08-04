@@ -10,6 +10,7 @@ import React from 'react';
 import CustomProvider from './context/context';
 import Cart from './components/Cart';
 import Checkout from './components/Checkout';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
           <Route path={'/cart'} element={<Cart />} />
           <Route path={'/checkout'} element={<Checkout/>}/>
         </Routes>
+        <Footer/>
       </div>
   </CustomProvider>
   );
